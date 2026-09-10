@@ -13,7 +13,7 @@ its own experiment.
 ## Selected Work
 
 ### 🔬 Born in Simulation
-**How much visual diversity does sim-to-real transfer actually need?**
+**How visual domain randomization bridges the sim-to-real gap for object recognition**
 
 Six ResNet-18 classifiers trained entirely on synthetic PyBullet renders of YCB
 objects, evaluated on 3,000 real photographs never seen during training.
@@ -79,7 +79,6 @@ event detection rather than hand-marked dates.
 ## Currently
 
 * Practical project in Physical AI at JKU
-* Reinforcement learning and formal methods coursework
 * Looking for internships and working-student roles in AI, ML and data science
 
 [LinkedIn](https://www.linkedin.com/in/saqib-ali-khan-07bb51279/) · saaqikhan00987@gmail.com
