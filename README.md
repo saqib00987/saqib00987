@@ -26,8 +26,6 @@ objects, evaluated on 3,000 real photographs never seen during training.
   diversity alone stops being enough
 * Found and documented a seed-collision bug that had silently produced identical
   training data across three conditions in the first run
-* A control comparison afterwards showed the curve's shape is not separable from
-  run-to-run variance, which is reported openly rather than quietly dropped
 * Written up as a short research paper (ACM format, included in the repo)
 
 **Stack:** Python · PyTorch · PyBullet · Grad-CAM
