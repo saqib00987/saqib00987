@@ -1,24 +1,79 @@
-## Saqib Ali Khan
+# Saqib Ali Khan
 
-BSc Artificial Intelligence student at JKU Linz. I work mostly on applied deep
-learning and computer vision, and I'm interested in the gap between models that
-work on benchmarks and models that work on real data.
+**BSc Artificial Intelligence @ JKU Linz · Computer Vision · Applied ML**
 
-Currently working on a practical project in Physical AI at JKU.
+I build and evaluate vision systems, and I'm most interested in the gap between
+models that work on benchmarks and models that survive contact with real data.
 
-**Some things I've built:**
+`Computer Vision` · `Deep Learning` · `Sim-to-Real` · `Data Annotation` · `Applied ML`
 
-- **[sim2real-domain-randomization](https://github.com/saqib00987/sim2real-domain-randomization)** —
-  image classifiers trained entirely in simulation and tested on real photographs,
-  studying how much visual diversity sim-to-real transfer actually needs. Includes
-  the seminar paper.
-- **[eurosat-classifier](https://github.com/saqib00987/eurosat-classifier)** —
-  a CNN built from scratch for satellite land-use classification, 96.7% accuracy,
-  with a small web app for live predictions.
-- **[us-macro-indicators-viz](https://github.com/saqib00987/us-macro-indicators-viz)** —
-  analysis and visualization of eight US macroeconomic series, with programmatic
-  detection of rate peaks, yield-curve inversions and recessions.
+---
 
-Python · PyTorch · scikit-learn · pandas
+## Selected Work
+
+### 🔬 Born in Simulation
+**How much visual diversity does sim-to-real transfer actually need?**
+
+Six ResNet-18 classifiers trained entirely on synthetic PyBullet renders of YCB objects,
+evaluated on 3,000 real photographs never seen in training.
+
+* Reached 61.3% real-world accuracy with zero real training images
+* Used Grad-CAM to show randomization shifts attention from background to object geometry
+* Ablation without ImageNet pretraining locating the data-scale boundary
+* Found and documented a seed-collision bug that had silently invalidated the first run
+* Wrote the results up as a short research paper (ACM format, included in the repo)
+
+**Stack:** Python · PyTorch · PyBullet · Grad-CAM
+
+[View project →](https://github.com/saqib00987/sim2real-domain-randomization)
+
+### 🛰️ EuroSAT Classifier
+**Satellite land-use classification, built from scratch**
+
+A VGG-style CNN trained without any pretrained weights, classifying satellite imagery
+into 10 land-use classes, wrapped in a web app for live predictions.
+
+* 96.7% validation accuracy, 96% on the held-out challenge set
+* Full training pipeline: AdamW, LR scheduling, early stopping, best-model checkpointing
+* Streaming per-channel normalisation computed without loading the dataset into memory
+* Shiny web app: upload an image, see the prediction and full probability distribution
+
+**Stack:** Python · PyTorch · torchvision · Shiny
+
+[View project →](https://github.com/saqib00987/eurosat-classifier)
+
+### 📈 US Macro Indicators
+**Where do interest rate changes actually show up?**
+
+Analysis and visualization of eight US macroeconomic series from the FRED API, built
+around programmatic event detection rather than hand-marked dates.
+
+* Automatic detection of rate peaks, yield-curve inversions and recession periods
+* Lagged-correlation heatmaps across three macro regimes
+* Significance-tested analysis of consumer sentiment response to economic shocks
+
+**Stack:** Python · pandas · Matplotlib · Plotly · FRED API
+
+[View project →](https://github.com/saqib00987/us-macro-indicators-viz)
+
+---
+
+## Focus
+
+Computer Vision → CNNs, transfer learning, Grad-CAM, sim-to-real
+Applied ML → experiment design, ablations, error analysis, evaluation
+Data → annotation, inter-annotator agreement, dataset construction
+Foundations → reinforcement learning, sequence models, algorithms
+
+
+## Currently
+
+* Practical project in Physical AI at JKU
+* Reinforcement learning and formal methods coursework
+* Looking for internships and working-student roles in AI/ML and Data science.
+
+---
+
+*Train it, break it, find out why.*
 
 [LinkedIn](https://www.linkedin.com/in/saqib-ali-khan-07bb51279/)
